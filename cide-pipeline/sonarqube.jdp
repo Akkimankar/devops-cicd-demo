@@ -18,8 +18,8 @@ pipeline {
               timeout(time: 1, unit: 'HOURS') {
                 waitForQualityGate abortPipeline: true
               }
-          
-            }  
+            }
+        }      
         stage('Test'){
             steps {
                 echo 'Test Successful by Hitesh'
