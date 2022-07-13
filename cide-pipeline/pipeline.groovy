@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull') { 
             steps {
-                
+              git 'https://github.com/Hiteshmankar123/devops-cicd-demo.git'  
             }
         }
         stage('Build') { 
