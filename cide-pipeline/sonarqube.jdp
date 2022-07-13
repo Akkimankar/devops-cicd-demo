@@ -1,25 +1,26 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage('Pull') { 
+        stage('Pull'){
             steps {
-              git 'https://github.com/Hiteshmankar123/studentapp-ui.git'  
+                git 'https://github.com/shubhamkalsait/studentapp-ui.git'
             }
         }
-        stage('Build') { 
-            steps {  
-                withSonarQubeEnv('Sonar-studentapp') {
-                    sh 'mvn clean package sonar:sonar'         
+        stage('Build'){
+           steps {
+                withSonarQubeEnv('sonar-studentapp') {
+                      sh 'mvn clean package sonar:sonar'
+                }       
             }
         }
-        stage('Test') { 
+        stage('Test'){
             steps {
-                echo "Test successful"                
+                echo 'Test Successful by Hitesh'
             }
         }
-        stage('Deploy') { 
-            steps {  
-               echo "deploy successful"       
+        stage('Deploy'){
+            steps {
+                echo 'Deploy Successful by Hitesh'
             }
         }
     }
