@@ -6,12 +6,12 @@ pipeline {
                 
             }
         }
-        stage('Test') { 
+        stage('Build') { 
             steps {
                 
             }
         }
-        stage('Build') { 
+        stage('Test') { 
             steps {
                 
             }
