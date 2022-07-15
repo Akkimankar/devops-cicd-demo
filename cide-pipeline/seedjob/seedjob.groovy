@@ -1,1 +1,1 @@
-job('example1')
+job('example1'){}
