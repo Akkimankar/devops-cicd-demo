@@ -1,3 +1,3 @@
 job('example1') {
     steps{
-        shell()
+        shell(echo "")
