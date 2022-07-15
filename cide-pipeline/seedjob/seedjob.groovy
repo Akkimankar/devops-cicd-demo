@@ -1,5 +1,5 @@
 job('example2') {
     steps {
-        shell('echo "welcome to nagpur"')
+        shell('echo "welcome to india"')
     }
 }   
