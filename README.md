@@ -1,2 +1,2 @@
 cicd-pipeline 
-Pull
+Pull-Build-Test
