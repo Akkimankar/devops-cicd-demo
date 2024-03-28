@@ -1,27 +1,27 @@
-apiVersion: v1
 kind: Pod
+apiVersion: v1
 metadata:
-  name: DevOps
+ name: sharedvolumeexample
 spec:
-    containers:
-     - name: c1
-       image: centos:7
-    command:
-     - "bin/bash"
-     - "-c"
-     - "sleep 10000"
-    volumeMounts:
-      - name: exchange
-        mountPath: "/tmp/exchange"
-      - name: c2
-        image: centos:7
-command:
-       - "bin/bash"
-       - "-c"
-       - "sleep 10000"
-volumeMounts:
-       - name: exchange
-         mountPath: "/tmp/data"
-volumes:
-        - name: exchange
-          emptyDir: {}      
+ containers:
+ - name: c1
+ image: centos:7
+ command:
+ - "bin/bash"
+ - "-c"
+ - "sleep 10000"
+ volumeMounts:
+ - name: xchange
+ mountPath: "/tmp/xchange"                                                               
+ - name: c2 
+ image: centos:7
+  command:
+  - "bin/bash"
+  - "-c"
+  - "sleep 10000"
+  volumeMounts:
+  - name: xchange
+  mountPath: "/tmp/data"
+  volumes:
+  - name: xchange
+    emptyDir: {}
