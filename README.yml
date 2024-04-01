@@ -23,6 +23,6 @@ spec:
       volumeMounts:
         - name: xchange
           mountPath: /tmp/data
-      volumes: null
+  volumes: null
     - name: xchange
       emptyDir: {}
