@@ -1,1 +1,40 @@
-this is bluefield
+# my-apache-pod.yaml #
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache-pod 
+  labels:
+    app: web
+  spec:
+    containers:
+    - name: apache-container
+      image: httpd  
+
+
+# my-Nginx-pod.yaml #
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Nginx
+  labels:
+    app: nginx-test
+   spec:
+     containers:
+       - name: nginx-container
+         image: nginx
+
+ # K8s #
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webserver
+spec:
+  containers:
+  - name: webserver
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+  - name: hiteshmankar777
+    image: nginx:latest       
